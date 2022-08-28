@@ -9,7 +9,7 @@ import { Button } from 'reactstrap';
 function App(){
 
   const btnHandle=()=>{
-    toast("this is my first message");
+    toast.success("done");
   };
 
 
@@ -18,7 +18,7 @@ function App(){
       <ToastContainer/>
       <h1>Here is a heading</h1>
       <Button color="warning" outline onClick={btnHandle}>
-         Click Me
+         clickMe
       </Button>
     </div>
   )
