@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 //mport 'react-toastify/dist/ReactToastify.min.css';
 import { ToastContainer, toast } from "react-toastify";
 import { Button } from 'reactstrap';
+import Course from './components/Course';
 function App(){
 
   const btnHandle=()=>{
@@ -20,6 +21,8 @@ function App(){
       <Button color="warning" outline onClick={btnHandle}>
          clickMe
       </Button>
+
+      <Course course={{title:"Web Development",name:"HTML, CSS"}}/>
     </div>
   )
 }

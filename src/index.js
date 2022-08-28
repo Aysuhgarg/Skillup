@@ -11,7 +11,6 @@ root.render(
   <React.StrictMode>
     <Home/>
     <App/> 
-    <App/>
 
   </React.StrictMode>
 );
