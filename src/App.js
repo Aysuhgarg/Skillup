@@ -9,6 +9,7 @@ import { Button } from 'reactstrap';
 import Course from './components/Course';
 import Home from './components/Home';
 import Allcourses from './components/Allcourses';
+import Addcourses from './components/Addcourses';
 function App(){
 
   const btnHandle=()=>{
@@ -21,6 +22,7 @@ function App(){
       <ToastContainer/>
       <Home/>
       <Allcourses/>
+      <Addcourses />
     </div>
   )
 }

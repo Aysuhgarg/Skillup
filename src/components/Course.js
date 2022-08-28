@@ -9,8 +9,8 @@ const Course=({course})=>{
             <CardBody>
                 <CardSubtitle className='font-weight-bold' ><h5>{course.title}</h5></CardSubtitle>
                 <CardText>It a {course.name} course for beginers</CardText>
-                <Container className='text-center '>
-                    <Button color= "danger" >Delete</Button>
+                <Container className='text-center'>
+                    <Button color= "danger">Delete</Button>
                     <Button color="warning ml-3">Update</Button>
                 </Container>
 
