@@ -16,7 +16,7 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Routes,
 } from "react-router-dom";
 function App(){
 
@@ -36,9 +36,11 @@ function App(){
               <Menu/>
             </Col>
             <Col md={8}>
-              <Route path="/" component={Home} exact></Route>
-              <Route path="/add-course" component={Addcourses} exact></Route>
-              <Route path="/view-courses" component={Allcourses} exact></Route>
+              <Routes>
+              <Route path="/" element={<Home/>} exact />
+              <Route path="/add-course" element={<Addcourses/>} exact />
+              <Route path="/view-courses" element={<Allcourses/>} exact />
+              </Routes>
             </Col>
           </Row>
       </Container>

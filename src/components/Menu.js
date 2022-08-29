@@ -1,5 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import {ListGroup,ListGroupItem} from "reactstrap"
+import Addcourses from './Addcourses';
+import Home from './Home';
 
 const Menu =()=>{
 
@@ -9,9 +12,9 @@ const Menu =()=>{
                 Home
             </Link>
             <Link className="list-group-item list-group-item-action" tag="a" to= "/add-course" action>
-               AddCourse
+               Addcourses
             </Link>
-            <Link className="list-group-item list-group-item-action" tag="a" to= "view-course" action>
+            <Link className="list-group-item list-group-item-action" tag="a" to= "/view-courses" action>
                 ViewCourses
             </Link>
             <Link className="list-group-item list-group-item-action" tag="a" to= "#!" action>
