@@ -12,6 +12,12 @@ import Allcourses from './components/Allcourses';
 import Addcourses from './components/Addcourses';
 import Header from './components/Header';
 import Menu from './components/Menu';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 function App(){
 
   const btnHandle=()=>{
@@ -21,6 +27,7 @@ function App(){
 
   return (
     <div>
+      <Router>
       <ToastContainer/>
       <Container>
           <Header/>
@@ -29,10 +36,13 @@ function App(){
               <Menu/>
             </Col>
             <Col md={8}>
-              <Home/>
+              <Route path="/" component={Home} exact></Route>
+              <Route path="/add-course" component={Addcourses} exact></Route>
+              <Route path="/view-courses" component={Allcourses} exact></Route>
             </Col>
           </Row>
       </Container>
+      </Router>
     </div>
   );
 };

@@ -5,21 +5,21 @@ const Menu =()=>{
 
     return (
         <ListGroup>
-            <ListGroupItem tag="a" href= "#!" action>
+            <Link className="list-group-item list-group-item-action" tag="a" to= "/" action>
                 Home
-            </ListGroupItem>
-            <ListGroupItem tag="a" href= "#!" action>
-                AddCourse
-            </ListGroupItem>
-            <ListGroupItem tag="a" href= "#!" action>
+            </Link>
+            <Link className="list-group-item list-group-item-action" tag="a" to= "/add-course" action>
+               AddCourse
+            </Link>
+            <Link className="list-group-item list-group-item-action" tag="a" to= "view-course" action>
                 ViewCourses
-            </ListGroupItem>
-            <ListGroupItem tag="a" href= "#!" action>
+            </Link>
+            <Link className="list-group-item list-group-item-action" tag="a" to= "#!" action>
                 About
-            </ListGroupItem>
-            <ListGroupItem tag="a" href= "#!" action>
+            </Link>
+            <Link className="list-group-item list-group-item-action" tag="a" to= "#!" action>
                 Contact
-            </ListGroupItem>
+            </Link>
         </ListGroup>
     );
 
