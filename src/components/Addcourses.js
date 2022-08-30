@@ -5,7 +5,7 @@ import {Form, FormGroup,Input,Container,Button } from 'reactstrap'
 const Addcourses=()=>{
 
     useEffect(()=>{
-        document.title = "Add Courses"
+        document.title = "Add Courses";
     },[]);
 
     return(
@@ -13,17 +13,17 @@ const Addcourses=()=>{
             <h1 className='text-center my-3'>Fill course Details</h1>
             <Form>
                 <FormGroup>
-                    <label for='userId'>CourseId</label>
+                    <label htmlFor='userId'>CourseId</label>
                     <Input type= "text" placeholder='Enter here' name="userId" id="userId" />
                 </FormGroup>
 
                 <FormGroup>
-                <label for='title'>Course Title</label>
+                <label htmlFor='title'>Course Title</label>
                 <Input type= "text" placeholder='Enter title here' id="title" />
                 </FormGroup>
 
                 <FormGroup>
-                <label for='description'>Course Description</label>
+                <label htmlFor='description'>Course Description</label>
                 <Input type= "textarea" placeholder='Enter title here' id="description" style={{height:150}} />
                 </FormGroup>
 
