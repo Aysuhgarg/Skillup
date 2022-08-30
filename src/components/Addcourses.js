@@ -1,8 +1,13 @@
 //import { Button } from 'bootstrap';
-import React, { Fragment } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import {Form, FormGroup,Input,Container,Button } from 'reactstrap'
 
 const Addcourses=()=>{
+
+    useEffect(()=>{
+        document.title = "Add Courses"
+    },[]);
+
     return(
         <Fragment>
             <h1 className='text-center my-3'>Fill course Details</h1>

@@ -1,9 +1,13 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Course from './Course';
 
 const Allcourses=()=>{
 
-    const [courses,setCourses]=useState([
+    useEffect (()=>{
+        document.title="All Courses"
+    },[]);
+    
+    const [courses,setCourses]=useState([                 //Hook
         {title:"Web Development",name:"HTML, CSS"},
         {title:"Android Development",name:"kotline,xml"},
         {title:"Backend Development",name:"Spring Boot"},
