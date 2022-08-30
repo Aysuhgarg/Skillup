@@ -25,7 +25,7 @@ const Allcourses=()=>{
 
     //function to call server
     const getAllCourseFromServer=()=>{
-        axio.get(`https://api.zippopotam.us/us/33162`).then(
+        axio.get(`${base_url}api/courses/`).then(
             (response)=>{
                 console.log(response);
                 toast.success("courses fetched");
