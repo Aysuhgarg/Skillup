@@ -1,6 +1,6 @@
 package com.ayush.skill.up.service;
 
-import com.ayush.skill.up.Model.Course;
+import com.ayush.skill.up.model.Course;
 import com.ayush.skill.up.repository.CourseRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class courseService {
+public class CourseService {
 
     @Autowired
     CourseRepo cr;

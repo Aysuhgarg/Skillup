@@ -1,7 +1,7 @@
 package com.ayush.skill.up.controller;
 
-import com.ayush.skill.up.Model.Course;
-import com.ayush.skill.up.service.courseService;
+import com.ayush.skill.up.model.Course;
+import com.ayush.skill.up.service.CourseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -14,7 +14,7 @@ import java.util.List;
 public class CourseController {
 
     @Autowired
-    courseService cs;
+    CourseService cs;
     @GetMapping("/courses/")
     public ResponseEntity<List<Course>> getAllCourse(){
 

@@ -1,4 +1,4 @@
-package com.ayush.skill.up.Model;
+package com.ayush.skill.up.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
