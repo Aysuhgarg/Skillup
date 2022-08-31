@@ -8,10 +8,10 @@ import { toast } from 'react-toastify';
 const Allcourses=()=>{
     
     const [courses,setCourses]=useState([                 //Hook
-    {title:"Web Development",name:"HTML, CSS"},
-    {title:"Android Development",name:"kotline,xml"},
-    {title:"Backend Development",name:"Spring Boot"},
-    {title:"Frontend",name:"Angular "}
+    // {title:"Web Development",name:"HTML, CSS"},
+    // {title:"Android Development",name:"kotline,xml"},
+    // {title:"Backend Development",name:"Spring Boot"},
+    // {title:"Frontend",name:"Angular "}
     ]);
 
     useEffect (()=>{
