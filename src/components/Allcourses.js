@@ -14,6 +14,10 @@ const Allcourses=()=>{
     // {title:"Frontend",name:"Angular "}
     ]);
 
+    const updateCourse=(id)=>{
+        setCourses(courses.filter((c) => c.id != id));
+    }
+
     useEffect (()=>{
         document.title="All Courses"
     },[]);
@@ -47,7 +51,7 @@ const Allcourses=()=>{
              <h1>All Courses</h1>
              <p>List of courses are as follows</p>
              {
-                 courses.length > 0 ? courses.map((item)=> <Course key={item.name} course={item}/>): "No courses available" 
+                 courses.length > 0 ? courses.map((item)=> <Course key={item.name} course={item} update={updateCourse}/>): "No courses available" 
                 }
         </div>
     );

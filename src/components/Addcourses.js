@@ -9,7 +9,7 @@ const Addcourses=()=>{
 
     useEffect(()=>{
         document.title = "Add Courses";
-    },[]);
+    },[course]);
 
     const [course,setCourses]=useState({});
     
@@ -32,6 +32,7 @@ const Addcourses=()=>{
                 console.log(response);
                 toast.success("Course added");
                 console.log(response.data);
+                setCourses({id: "",name: "",title: ""});
             },
             (error)=>{
                 
