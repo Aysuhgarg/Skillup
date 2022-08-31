@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
@@ -27,4 +28,14 @@ public class CourseController {
         return new ResponseEntity<Course>(cs.addCourse(coursedata),HttpStatus.CREATED);
     }
 
+    @DeleteMapping("course/{id}")
+    public ResponseEntity<?> deleteById(@PathVariable int id){
+        cs.deleteCourseById(id);
+        return new ResponseEntity(Map.of("message","Course deleted successfully"),HttpStatus.OK);
+    }
+
+    @PutMapping("/course")
+    public ResponseEntity<Course> updateCourseById(@RequestBody Course newCourse){
+        return new ResponseEntity<Course>(cs.updateCourseById(newCourse),HttpStatus.OK);
+    }
 }
