@@ -29,7 +29,7 @@ const Addcourses=()=>{
 
                 <Container className='text-center' >
                     <Button color="success "> Add Course</Button>
-                    <Button color="warning ml-2"> clear</Button>
+                    <Button type="reset" color="warning ml-2"> clear</Button>
                 </Container>
             </Form>
         </Fragment>
